@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -172,7 +175,7 @@
           </div>
           <div class="col-md-6 my-4">
             <div class="info-right">
-              <img src="img/contact1.jpg" style="width: 100%;" >
+              <img src="img/contact1.png" style="width: 100%;" >
             </div>
           </div>
         </div>
