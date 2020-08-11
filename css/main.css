@@ -1,0 +1,31 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header {
+  margin-top: 70px;
+}
+
+#testimonial {
+  background: #7FFFD4;
+  padding: 50px 0 30px 0;
+  text-align: left;
+  margin-top: 40px;
+}
+
+#info-two {
+  background: #7FFFD4;
+  padding: 50px 0 30px 0;
+  text-align: left;
+  margin-top: 40px;
+}
+
+#i-refin{
+  background: #AFEEEE;
+  padding: 50px 0 30px 0;
+  text-align: left;
+}
+
+footer {
+  background: url(../img/circuit1.jpg);
+}
