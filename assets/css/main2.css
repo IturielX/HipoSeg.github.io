@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
+:root {
+--main: #5EC3E6;
+--main-hover: #006DB6;
+--chill: #1e90ff;
+}
+
 body {
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: open sans, sans-serif;
   color: #505962;
 }
 .navbar {
@@ -13,13 +19,17 @@ body {
 
 }
 
-
-
+h1,
+h2,
+h3,
+h4 {
+	color: #ffffff;
+}
 
 .btn-outline-warning {
   color: rgba(255, 250, 101,1.0);
   border-color: rgba(255, 250, 101,1.0);
-  font-family: 'Lato', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: rgba(116, 125, 140,.0);
 
 }
@@ -36,7 +46,7 @@ body {
 
 .caption {
   position: absolute;
-  top: 38%;
+  top: 20%;
   width: 100%;
   color: white;
 }
@@ -67,6 +77,14 @@ body {
   text-emphasis-color: #3742fa;
 }
 
+.btn {
+	border-radius: 50px;
+	padding: 10px 23px;
+}
+
+.hk-section {
+	padding: 80px 0;
+}
 /*============= COURSE SECTION =============*/
 
 .col-md-8 {
@@ -131,7 +149,130 @@ body {
   }
 
 }
+/*============ CONTACT FORM:=============*/
+* {
+   box-sizing:border-box;
+   -webkit-box-sizing:border-box;
+   -moz-box-sizing:border-box;
+   -webkit-font-smoothing:antialiased;
+   -moz-font-smoothing:antialiased;
+   -o-font-smoothing:antialiased;
+   font-smoothing:antialiased;
+   text-rendering:optimizeLegibility;
+}
+body {
+   color: #C0C0C0;
+   font-family: 'Source Sans Pro', sans-serif;
+}
 
+
+/* Contact Form Styles */
+h1 {
+   margin: 10px 0 0 0;
+}
+h4{
+   margin: 0 0 20px 0;
+}
+#contact-form {
+   background-color:rgba(30, 144, 255,.3);
+   padding: 10px 20px 30px 20px;
+   max-width:100%;
+   float: left;
+   left: 50%;
+   position: absolute;
+   margin-top:30px;
+   margin-left: -260px;
+   border-radius:7px;
+   -webkit-border-radius:7px;
+   -moz-border-radius:7px;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
+#contact-form label {
+   font-size: 15px;
+   margin-bottom: 2px;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+#contact-form input,
+#contact-form select,
+#contact-form textarea {
+   width:100%;
+   background: rgba(255, 255, 255,.5);
+   border: 0;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+   border-radius: 4px;
+   margin-bottom: 25px;
+   padding: 5px;
+}
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+   background-color: #E5E6E7;
+}
+#contact-form input:hover,
+#contact-form select:hover,
+#contact-form textarea:hover {
+   background-color: rgba(255, 255, 255,.7);
+}
+#contact-form textarea {
+   width:100%;
+   height: 150px;
+}
+#contact-form button[type="submit"] {
+   cursor:pointer;
+   width:100%;
+   border:none;
+   background:#5EC3E6;
+   background-image:linear-gradient(bottom, #006DB6  0%, #5EC3E6 52%);
+   background-image:-moz-linear-gradient(bottom, #006DB6 0%, #5EC3E6 52%);
+   background-image:-webkit-linear-gradient(bottom, #006DB6 0%, #5EC3E6 52%);
+   color:#FFF;
+   margin:0 0 5px;
+   padding:10px;
+   border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+   background-image:linear-gradient(bottom, #5EC3E6 0%, #006DB6 52%);
+   background-image:-moz-linear-gradient(bottom, #5EC3E6 0%, #006DB6 52%);
+   background-image:-webkit-linear-gradient(bottom, #5EC3E6 0%, #1e90ff 52%);
+   -webkit-transition:background 0.3s ease-in-out;
+   -moz-transition:background 0.3s ease-in-out;
+   transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+   box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+input:required, textarea:required {
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   -o-box-shadow: none;
+}
+#contact-form .required {
+   font-weight:bold;
+   color: #E5E6E7;
+}
+
+/* Hide success/failure message
+   (especially since the php is missing) */
+#failure, #success {
+   color: #6EA070;
+   display:none;
+}
+
+/* Make form look nice on smaller screens */
+@media only screen and (max-width: 580px) {
+   #contact-form{
+      left: 3%;
+      margin-right: 3%;
+      width: 88%;
+      margin-left: 0;
+      padding-left: 3%;
+      padding-right: 3%;
+   }
+}
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
